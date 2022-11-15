@@ -13,13 +13,13 @@
 * Example with empty inputs.
 * Examples with invalid inputs.
 
-=> same([1, 2, 3], [1, 4, 9]) // true
-=> same([1, 2, 1], [4, 1, 1]) // true
-=> same([2, 2, 1], [1, 1, 4]); // false
-=> same([2, 2, 1, 1], [1, 1, 4]); // false
-=> same(); // false
-=> same(true, false) // false
-=> same("test", 10) // false
+    same([1, 2, 3], [1, 4, 9]); // true
+same([1, 2, 1], [4, 1, 1]); // true
+same([2, 2, 1], [1, 1, 4]); // false
+same([2, 2, 1, 1], [1, 1, 4]); // false
+same(); // false
+same(true, false); // false
+same("test", 10); // false
 
 3. Break it down:
 * Write the Pseudocode of the program.Don't start writing the code OR we can say write down the steps you need to take.
@@ -41,7 +41,7 @@ a.
 * Check how other people solved this problem.
 
 // 1st appraoch : O(n2)
-function same(arr1 = [], arr2 = []) {
+function same(arr1, arr2) {
     if (!Array.isArray(arr1) || !Array.isArray(arr2)) return false;
     if (arr1.length !== arr2.length) return false;
 
@@ -60,15 +60,41 @@ function same(arr1 = [], arr2 = []) {
     return true;
 }
 
-// 2nd appraoch : O(n)
-function same(arr1 = [], arr2 = []) {
+// 2nd appraoch : O(3n) => O(n)
+function same(arr1, arr2) {
     if (!Array.isArray(arr1) || !Array.isArray(arr2)) return false;
     if (arr1.length !== arr2.length) return false;
+
+    const freq1 = {};
+    const freq2 = {};
+
+    for (const num of arr1) {
+        let newNum = num ** 2;
+        freq1[newNum] = freq1[newNum] ? ++freq1[newNum] : 1;
+    }
+
+    for (const num of arr2) {
+        freq2[num] = freq2[num] ? ++freq2[num] : 1;
+    }
+
+    console.log({ freq1, freq2 });
+
+    for (const key in freq1) {
+        if (freq1[key] !== freq2[key] || !freq2.hasOwnProperty(key)) {
+            return false;
+        }
+    }
+    return true;
 }
 
 
-same([1, 2, 3], [4, 1, 9])
-
+same([1, 2, 3], [1, 4, 9]); // true
+same([1, 2, 1], [4, 1, 1]); // true
+same([2, 2, 1], [1, 1, 4]); // false
+same([2, 2, 1, 1], [1, 1, 4]); // false
+same(); // false
+same(true, false); // false
+same("test", 10); // false
 
 
 
