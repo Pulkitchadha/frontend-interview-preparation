@@ -1,0 +1,40 @@
+// problem name
+
+1. Understand the problem:
+* Write the problem in your words. = Check 2 array has same value and frequency.
+* What are the inputs ? = 2 inputs - arr1 & arr2.
+* What are the outputs ? = Boolean, True if same and false if not same.
+* Can we determine the outputs from the input ? = yes, we can determine.
+* Add comments for imp parts.
+
+2. Explore concrete examples:
+* Start with a simple example.
+* Complex examples.
+* Example with empty inputs.
+* Examples with invalid inputs.
+
+3. Break it down:
+* Write the Pseudocode of the program.Don't start writing the code OR we can say write down the steps you need to take.
+
+4. Solve or simplify:
+* Find the core difficulty in your program.
+* Temporarily ignore that difficulty.
+* Write a simplified solution.
+* Incorporate that difficulty
+
+5. Look back and refactor:
+* Check the result or output.
+* Can you understand it at a glance ?
+* Can you use the method or solution for some other problem.
+* Can you improve the performance of the solution ?
+* Think about other solutions to the problem.
+* Check how other people solved this problem.
+
+
+
+
+// 1st appraoch : O(n2)
+function same(arr1, arr2) {
+}
+
+same([1, 2, 3], [4, 1, 9]) // true
