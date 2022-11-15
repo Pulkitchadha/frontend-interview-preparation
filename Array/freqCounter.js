@@ -69,18 +69,18 @@ function same(arr1, arr2) {
     const freq2 = {};
 
     for (const num of arr1) {
-        let newNum = num ** 2;
-        freq1[newNum] = freq1[newNum] ? ++freq1[newNum] : 1;
+        freq1[num] = ++freq1[num] || 1;
     }
 
     for (const num of arr2) {
-        freq2[num] = freq2[num] ? ++freq2[num] : 1;
+        freq2[num] = ++freq2[num] || 1;
     }
 
-    console.log({ freq1, freq2 });
-
     for (const key in freq1) {
-        if (freq1[key] !== freq2[key] || !freq2.hasOwnProperty(key)) {
+        if (freq1[key ** 2] !== freq2[key]) { // check freq
+            return false;
+        }
+        if (!freq2.hasOwnProperty(key ** 2)) { // check the existence of number.
             return false;
         }
     }
