@@ -29,12 +29,3 @@
 * Can you improve the performance of the solution ?
 * Think about other solutions to the problem.
 * Check how other people solved this problem.
-
-
-
-
-// 1st appraoch : O(n2)
-function same(arr1, arr2) {
-}
-
-same([1, 2, 3], [4, 1, 9]) // true

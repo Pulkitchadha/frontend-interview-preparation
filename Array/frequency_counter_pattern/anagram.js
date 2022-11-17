@@ -1,3 +1,4 @@
+//  Frequence counter Pattern
 // same freq string or anagram
 // input arguments = s1 & s2 string
 // output boolean = true if anagram ,  false if not
