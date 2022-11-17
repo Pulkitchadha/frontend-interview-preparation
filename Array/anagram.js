@@ -7,6 +7,7 @@
 // anagram(); // false
 // anagram("aaz", "aaza");  // false boz length is diff.
 // anagram(false, 1); // false
+// anagram("Aaz", "aaZ"); // false or true
 
 // Solution 1: O(n2)
 function anagram(s1, s2) {
@@ -50,6 +51,24 @@ function anagram(s1, s2) {
         if (freqS1[key] !== freqS2[key]) return false // check the char frequency
     }
 
+    return true;
+}
+
+// Solution 3 : O(2n) = O(n)
+function anagram(str1, str2) {
+    if (typeof str1 != "string" || typeof str2 != "string") return false;
+    if (str1.length !== str2.length) return false;
+
+    const freq = {};
+
+    for (const char of str1) {
+        freq[char] = ++freq[char] || 1;
+    }
+
+    for (const char of str2) {
+        if (!freq[char]) return false;
+        else freq[char] = -1;
+    }
     return true;
 }
 
