@@ -29,3 +29,9 @@
 * Can you improve the performance of the solution ?
 * Think about other solutions to the problem.
 * Check how other people solved this problem.
+
+Methods to solve problems:
+* Frequeny counter - check duplicacy, check anagam.
+* Multi pointer = array shud be sorted.
+* sliding window.
+* Divide n conquer.= aray shud be sorted.
