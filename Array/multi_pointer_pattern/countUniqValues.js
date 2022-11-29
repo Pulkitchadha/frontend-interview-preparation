@@ -8,7 +8,7 @@
 // countUniqueValues("test") // 0
 
 
-// Solution 1: O(n)
+// Solution 1: O(n), SC: O(1)
 function countUniqValues(arr) {
     if (!Array.isArray(arr)) return 0;
     if (!arr.length) return 0;
@@ -16,7 +16,7 @@ function countUniqValues(arr) {
     return [...new Set(arr)].length;
 }
 
-// Solution 2: O(n)
+// Solution 2: O(n) , SC: O(n)
 function countUniqValues(arr) {
     if (!Array.isArray(arr)) return 0;
     if (!arr.length) return 0;
@@ -30,7 +30,7 @@ function countUniqValues(arr) {
     return Object.keys(freq).length;
 }
 
-// Solution 3 : O(n)
+// Solution 3 : O(n), SC: O(1)
 function countUniqValues(arr) {
     if (!Array.isArray(arr)) return false;
     if (!arr.length) return false;
@@ -50,7 +50,7 @@ function countUniqValues(arr) {
     return i + 1;
 }
 
-// Solution 4 : O(n)
+// Solution 4 : O(n), SC: O(1)
 function countUniqueValues(arr = []) {
     if (!Array.isArray(arr)) return 0;
     if (arr.length === 0) return 0;
