@@ -30,7 +30,6 @@ maxSubarraySum([2, 6, 9, 2, 1, 8, 5, 6, 3], 3)
 
 
 // Solution 2: O(2n) = O(n), SC: O(1)
-
 function maxSubarraySum(arr, n) {
     if (!Array.isArray(arr) || typeof n !== "number") return null;
     if (!arr.length || n < 1) return null;
