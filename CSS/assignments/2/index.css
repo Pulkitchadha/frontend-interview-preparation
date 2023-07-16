@@ -1,0 +1,32 @@
+html,
+body,
+.main {
+  height: 100%;
+  margin: 0;
+}
+
+.main-box {
+  border: 5px solid rgb(221, 190, 12);
+  padding: 10px 5px 15px 20px;
+  margin: 10px 5px 15px 20px;
+  height: 300px;
+  width: 45%;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.main-box:first-child {
+  /* height: 100%; */
+  /* height: 300px;
+  width: 50%;
+  box-sizing: border-box; */
+  /* 2nd box will take the place of 1st one */
+  /* display: none; */
+  /* 2nd box will not take the place of 1st one */
+  visibility: hidden;
+}
+
+.box-second:hover {
+  background: green;
+  color: white;
+}

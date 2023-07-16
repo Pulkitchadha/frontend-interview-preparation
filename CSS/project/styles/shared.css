@@ -1,0 +1,111 @@
+* {
+  /* Fix horizontal scroll on page - dynamically calc the height */
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0px;
+}
+
+/* Header styling */
+.main-header {
+  background: black;
+  padding: 10px 5px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.main-header > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.main-header__brand {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 22px;
+  display: inline-block;
+  height: 22px;
+}
+
+.main-header__brand img {
+  height: 100%;
+}
+
+/* Nav bar style */
+
+.main-nav {
+  display: inline-block;
+  text-align: right;
+  width: calc(100% - 80px);
+  vertical-align: middle;
+}
+
+.main-nav__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__item {
+  display: inline-block;
+  margin: 0px 16px;
+}
+
+.main-nav__item a {
+  text-decoration: none;
+  color: white;
+  padding: 3px;
+  font-weight: bold;
+}
+
+.main-nav__item a:hover,
+.main-nav__item a:active {
+  color: blue;
+  border-bottom: 5px solid white;
+}
+
+.main-nav__item--cta a {
+  background: blue;
+  color: white;
+  border-radius: 8px;
+  padding: 8px 16px;
+}
+
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active {
+  border: none;
+  background: white;
+  color: blue;
+}
+
+/* Footer style */
+
+.main-footer {
+  background: black;
+}
+
+.main-footer__list {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.main-footer__list li {
+  display: inline-block;
+  margin: 16px;
+  padding: 8px;
+}
+
+.main-footer__link {
+  color: white;
+  text-decoration: none;
+}
+
+.main-footer__link:is(:hover, :active) {
+  color: grey;
+}

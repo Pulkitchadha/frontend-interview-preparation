@@ -35,3 +35,20 @@ Methods to solve problems:
 * Multi pointer = array shud be sorted.
 * sliding window.
 * Divide n conquer.= aray shud be sorted.
+
+
+javascript-sde-cheat-sheet
+* Javascript - Done
+* Web fundamentals - In-Progress
+* DS
+* Algorithm
+* Sorting
+* Searching
+* JS Questions
+* React Questions 
+
+CSS:
+* Basics
+* Grid
+* Flexbox
+* Projects 

@@ -1,0 +1,88 @@
+Q1 Use of css.
+A1 Like, HTML is used to structure the page.Css is used to style the page.
+
+Q2 Diff ways to add style.
+A2 Inline, style tag and external css.
+
+Q3. Types of selector:
+A4. Element, class, id, universal, attribute.
+
+Q4 Specificity
+A4 Cascading style sheets means many style cascade with each other or can be used together.
+so, to avoid conflicts we have Specificity.
+
+Top to bottom.
+
+1. Inline style
+2. Id.
+3. class, pseudo class and attribute.
+4. tag and pseudo element selector.
+5. universal selector.
+6. inherited style from parent.
+
+
+Q5. Universal selector is inefficient.It takes time in parsing.so, use wisely
+It is better to add styling on body tag.
+
+Q6. CSS support inheritance.
+A6 CSS elments inherits some styles from its parent element.
+
+Q7 Combinators.
+A7 Combinators are used to make any element unique from other.By using combination
+of selectors, element selctor or class. Also, increases Specificity.
+Any two selector can be used.
+
+Q8 Types of combinators.
+A8
+
+1. Adjacent (+)
+h2 + p {
+    color : red;
+}
+
+a) Parent shud be same.
+b) Add red color to all the p elements that are Adjacent to h2 or comes after h2.
+
+2. General sibling. (~)
+h2 ~ p {
+    color : red;
+}
+
+a) Parent shud be same.
+b) Add red color to all the p elements that comes after h2.(May not be adjacent.)
+
+3. Child (>)
+div > p {
+    color : red;
+}
+
+a) Add red color to all the p that are child of div.
+b) One catch.It works only one level down child.
+
+4. Descendant. (space)
+div  p {
+    color : red;
+}
+
+a) Works for any level down child.
+
+
+* Box model and its part
+
+Content - Element.
+padding - Internal spacing.
+border - Line btw internal & ext spacing.
+margin - External spacing.
+
+
+* Margin collapsing - Overlapping of margins with multiple elments.Element having bigger margin wins.
+
+*  Block level elements (Like div, section) takes full width unlike inline elments like <a>, <button>
+
+* display property has 4 values:
+ => block = takes all available horizontal space or width. eg - div, section, nav, p, h1.
+ => inline  = take the space they require to fit their content. eg - span, a, img.
+ => none = hide the element.
+ => inline-block =
+
+ * Diff btw display: none, visiblity : hidden
