@@ -40,10 +40,10 @@ Methods to solve problems:
 javascript-sde-cheat-sheet
 * Javascript - Done
 * Web fundamentals - Done
+* Searching - Done
+* Sorting - 
 * JS Questions -  In-Progress
 * React Questions  - In-Progress
-* Sorting
-* Searching
 * Algorithm
 * DS
 
