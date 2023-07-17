@@ -39,13 +39,16 @@ Methods to solve problems:
 
 javascript-sde-cheat-sheet
 * Javascript - Done
-* Web fundamentals - In-Progress
-* DS
-* Algorithm
+* Web fundamentals - Done
+* JS Questions -  In-Progress
+* React Questions  - In-Progress
 * Sorting
 * Searching
-* JS Questions
-* React Questions 
+* Algorithm
+* DS
+
+
+
 
 CSS:
 * Basics
