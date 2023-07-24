@@ -41,11 +41,15 @@ javascript-sde-cheat-sheet
 * Javascript - Done
 * Web fundamentals - Done
 * Searching - Done
-* Sorting - 
+* Sorting - In-Progress
 * JS Questions -  In-Progress
 * React Questions  - In-Progress
+* Stack: - In-Progress
+* Queue:
+* LinkedList:
+* Tree:
+* Graph: 
 * Algorithm
-* DS
 
 
 
