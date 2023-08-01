@@ -45,7 +45,7 @@ javascript-sde-cheat-sheet
 * JS Questions -  In-Progress
 * React Questions  - In-Progress
 * Stack: - In-Progress
-* Queue:
+* Queue: - In-Progress
 * LinkedList:
 * Tree:
 * Graph: 
