@@ -1,4 +1,4 @@
-
+// Syntax : array.map(function(currentValue, index, arr), thisValue)
 
 Array.prototype.myMap = function(callback) {
     if(typeof callback !== "function") return;

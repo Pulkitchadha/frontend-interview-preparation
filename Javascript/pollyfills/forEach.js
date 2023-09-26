@@ -1,3 +1,4 @@
+// Syntax : array.forEach(function(currentValue, index, arr), thisValue)
 
 Array.prototype.myForEach = function(callback) {
     if(typeof callback !== "function") return;
