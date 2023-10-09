@@ -1,0 +1,31 @@
+/* https://flexboxfroggy.com/ */
+
+/* Main Property */
+div {
+    display : flex;
+    /* Align items horizontally; */
+    justify-content: flex-start/flex-end/center/space-between/space-around/space-evenly; 
+    /* Align items vertically; */
+    align-items: flex-start/flex-end/center/baseline/stretch;
+}
+
+/* Other Property */
+div {
+    display : flex;
+    /* Align items horizontally; */
+    justify-content: flex-start/flex-end/center/space-between/space-around/space-evenly; 
+    /* Align items vertically; */
+    align-items: flex-start/flex-end/center/baseline/stretch;
+    /* Change the order of items either horizontally or vertically */
+    flex-direction: row/row-reverse/column/column-reverse;
+    /* Property to re-order the items */
+    order: -2,-1,0,1,2;
+    /* Used for specific item : ? */
+    align-self: flex-start/flex-end/center/baseline/stretch;
+    /* ? */
+    flex-wrap: wrap/no-wrap/wrap-reverse;
+    /* Combination of flex direction & flex wrap */
+    flex-flow : row wrap;
+    /* ? */
+    align-content : flex-start/flex-end/center/space-between/space-around/stretch; 
+}
