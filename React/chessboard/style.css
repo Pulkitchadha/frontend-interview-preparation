@@ -1,0 +1,57 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+    width: 1000px;
+  }
+  
+  .container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .block {
+    padding: 50px;
+    height: 10px;
+    width: 10px;
+    border: 1px solid black;
+  }
+  
+  /* .block:nth-child(even) {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+  } */
+  
+  /* .block:nth-child(-2n + 8),
+  .block:nth-child(8) ~ .block:nth-child(-2n + 15),
+  .block:nth-child(16) ~ .block:nth-child(-2n + 24),
+  .block:nth-child(24) ~ .block:nth-child(-2n + 31),
+  .block:nth-child(32) ~ .block:nth-child(-2n + 40),
+  .block:nth-child(40) ~ .block:nth-child(-2n + 47),
+  .block:nth-child(48) ~ .block:nth-child(-2n + 56),
+  .block:nth-child(56) ~ .block:nth-child(-2n + 63) {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+  } */
+  
+  @media (720px < width < 1200px) {
+    .block {
+      background-color: yellow;
+      color: black;
+      border: 1px solid black;
+    }
+  }
+  
+  .black {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+  }
+  
+  .white {
+    background-color: white;
+    color: black;
+  }
+  

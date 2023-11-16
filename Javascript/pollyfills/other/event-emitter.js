@@ -4,7 +4,6 @@ const EventEmitter = function () {
     this.on = function (type, cb) {
         if (this.event[type]) {
             this.event[type].push(cb)
-
         }
         else {
             this.event[type] = [cb]

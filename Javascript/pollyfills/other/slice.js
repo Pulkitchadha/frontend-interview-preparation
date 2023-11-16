@@ -20,7 +20,6 @@ String.prototype.mySlice = function(start = 0, end) {
   return result;  
 }
 
-
 str.mySlice(0,6); // simple
 str.mySlice(5) // complex
 str.mySlice(); // empty input
