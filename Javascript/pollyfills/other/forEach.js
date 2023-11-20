@@ -1,12 +1,12 @@
 // Syntax : array.forEach(function(currentValue, index, arr), thisValue)
 
-Array.prototype.myForEach = function(callback) {
+Array.prototype.myForEach = function(callback, context) {
     if(typeof callback !== "function") return;
 
     const arr = this;
 
-    for(let i =0; i < arr.length; i++) {
-        callback(arr[i], i, arr);
+    for(let i = 0; i < arr.length; i++) {
+        callback.call(context, arr[i], i, arr);
     }
 }
 
